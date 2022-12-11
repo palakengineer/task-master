@@ -1,38 +1,39 @@
-importjava.util.Scanner;
-class Calculator
+import java.util.Scanner;
+ class Calculator
 {
-public staticvoid main(String args[])
+public static void main(String [] args)
 {
-int a,b;
-Scanner sc=nrewScanner(System.in);
-System.out.println("Enter two numbers");
-a=sc.nextInt();
-b=sc.nextInt();
-System.out.println("Enter the operator(+,-,*,/)");
-Char op=sc.next()ChartAt(0);
-int c=0;
-Switch(op);
+int n1,n2,ch,cal;
+System.out.println("Enter two numbers ");
+Scanner sc=new Scanner(System.in);
+n1=sc.nextInt();
+n2=sc.nextInt();
+System.out.println("Select operation ");
+ch=sc.nextInt();
+
+if(ch==1)
 {
-case'+':
-c=a+b;
-break;
-case'-':
-c=a-b:
-break;
-case'*':
-c=a*b;
-break;
-case'a/b':
-c=a/b;
-break;
-default:
-System.out.println("wrong number");
-break;
+cal=n1+n2;
+System.out.println("Addition "+cal);
 }
-System.out.println("The final result");
-System.out.ptintln();
-Stsrem.out.prrintln(a+""+op+""+b+""+c);
+else if(ch==2)
+{
+cal=n1-n2;
+System.out.println("Substraction "+cal);
+}
+else if(ch==3)
+{
+cal=n1*n2;
+System.out.println("Multiplication "+cal);
+}
+else if(ch==4)
+{
+cal=n1/n2;
+System.out.println("Division "+cal);
 }
 }
+}
+
+
 
 
